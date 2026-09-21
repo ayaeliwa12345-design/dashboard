@@ -9,9 +9,9 @@ var options = {
   chart: {
     type: 'bar',
     height: 220,
-    toolbar: { show: false } // إخفاء أدوات التحكم لتنظيف التصميم
+    toolbar: { show: false } 
   },
-  colors: ['#5b73e8', '#e6ebf5'], // ألوان الأعمدة مثل الصورة تماماً
+  colors: ['#5b73e8', '#e6ebf5'], 
   plotOptions: {
     bar: {
       horizontal: false,
@@ -30,8 +30,8 @@ var options = {
     axisBorder: { show: false },
     axisTicks: { show: false }
   },
-  yaxis: { show: false }, // إخفاء المحور الصادي
-  grid: { show: false },  // إخفاء خطوط الشبكة الخلفية
+  yaxis: { show: false }, 
+  grid: { show: false },  
   legend: {
     position: 'bottom',
     horizontalAlign: 'left',
@@ -43,23 +43,23 @@ var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
 
 var options = {
-  series: [40, 32, 28], // النسبة المئوية لكل فترة (Afternoon, Evening, Morning)
+  series: [40, 32, 28], 
   labels: ['Afternoon', 'Evening', 'Morning'],
   chart: {
     type: 'donut',
     height: 280
   },
-  colors: ['#5b73e8', '#8297f6', '#c6d2fd'], // تدرجات اللون الأزرق/البنفسجي
+  colors: ['#5b73e8', '#8297f6', '#c6d2fd'],
   stroke: {
-    width: 0 // إخفاء الحدود بين الأجزاء
+    width: 0 
   },
   dataLabels: {
-    enabled: false // إخفاء الأرقام من فوق الرسم نفسه
+    enabled: false 
   },
   plotOptions: {
     pie: {
       donut: {
-        size: '75%' // سمك الحلقة
+        size: '75%' 
       }
     }
   },
@@ -100,7 +100,7 @@ chart.render();
 
 
 var ratingOptions = {
-    series: [85, 85, 92], // النسب المئوية للـ Hygiene, Food Taste, Packaging
+    series: [85, 85, 92], 
     chart: {
         height: 280,
         type: 'radialBar',
@@ -139,11 +139,11 @@ var ratingOptions = {
             track: {
                 background: '#f2f4f8',
                 strokeWidth: '97%',
-                margin: 8, // مسافة بين الدوائر
+                margin: 8, 
             }
         }
     },
-    colors: ['#707be9', '#ff9f43', '#2bcbba'], // ألوان الدوائر: Hygiene, Food Taste, Packaging
+    colors: ['#707be9', '#ff9f43', '#2bcbba'], 
     labels: ['Hygiene', 'Food Taste', 'Packaging'],
     legend: {
         show: true,
@@ -193,7 +193,7 @@ var lineChartOptions = {
         height: 180,
         toolbar: { show: false }
     },
-    colors: ['#5b73e8', '#e6ebf5'], // ألوان الخطوط (الأزرق والرمادي)
+    colors: ['#5b73e8', '#e6ebf5'], 
     stroke: {
         curve: 'smooth',
         width: [3, 2]
